@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 36)
+    (drawings 34)
     (tracks 95)
     (zones 0)
     (modules 85)
@@ -4181,8 +4181,6 @@
 
   (gr_line (start 132.55625 79.375) (end 132.55625 57.15) (layer F.SilkS) (width 0.15))
   (gr_line (start 151.60625 57.15) (end 115.09375 57.15) (layer F.SilkS) (width 0.15))
-  (gr_line (start 99.2375 59.53125) (end 99.2375 23.93125) (layer F.SilkS) (width 0.15))
-  (gr_line (start 97.6 75.6) (end 97.6 45.8) (layer F.SilkS) (width 0.15))
   (gr_line (start 137.6 34.3) (end 146.6 34.3) (layer Edge.Cuts) (width 0.1) (tstamp 5F3A8882))
   (gr_line (start 148.3 39.8) (end 148.3 36) (layer Edge.Cuts) (width 0.1) (tstamp 5F3A884F))
   (gr_arc (start 149.7 39.8) (end 149.7 41.2) (angle 90) (layer Edge.Cuts) (width 0.1) (tstamp 5F3A884E))
