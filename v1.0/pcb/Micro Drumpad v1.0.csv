@@ -1,0 +1,9 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"G***";"Decorations-2";1;"LOGO";;;
+2;"U1";"ProMicro_v3";1;"ProMicro";;;
+3;"H4,H3,H2,H1";"MountingHole_3.2mm_M3";4;"MountingHole";;;
+4;"L18,L17,L16,L15,L14,L13,L12,L11,L10,L9,L8,L7,L6,L5,L4,L3,L2,L1";"SK6812MINI_rev";18;"SK6812MINI";;;
+5;"SW18,SW17,SW16,SW15,SW14,SW13,SW12,SW11,SW10,SW9,SW8,SW7,SW6,SW5,SW4,SW3,SW2,SW1";"MXOnly-1U-Hotswap";18;"SW_PUSH";;;
+6;"DE1,D4,D8,D12,D16,D18,D3,D7,D11,D15,D17,D2,D6,D10,D14,D1,D5,D9,D13";"D_SOD-123";19;"D";;;
+7;"SWR1";"SW_SPST_TL3342";1;"SW_PUSH";;;
+8;"SWE1";"RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm";1;"Rotary_Encoder_Switch";;;
