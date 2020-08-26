@@ -1,0 +1,86 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L arcticPCB-cache:acheronSymbols_STM32F072-LQFP48 U1
+U 1 1 5F3FD0BA
+P 13255 6080
+F 0 "U1" H 13210 6140 79  0000 L CNB
+F 1 "STM32F072-LQFP48" H 12650 6010 79  0000 L CNB
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 13255 6080 50  0001 C CNN
+F 3 "" H 13255 6080 50  0001 C CNN
+	1    13255 6080
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small CB2
+U 1 1 5F4044E9
+P 11300 6805
+F 0 "CB2" V 11495 6730 50  0000 L CNN
+F 1 "10n" V 11415 6735 50  0000 L CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 11300 6805 50  0001 C CNN
+F 3 "~" H 11300 6805 50  0001 C CNN
+	1    11300 6805
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11555 6680 11300 6680
+Wire Wire Line
+	11300 6680 11300 6705
+Wire Wire Line
+	11555 6930 11300 6930
+Wire Wire Line
+	11300 6930 11300 6905
+$Comp
+L Device:C_Small CB1
+U 1 1 5F406806
+P 11045 6805
+F 0 "CB1" V 11240 6730 50  0000 L CNN
+F 1 "10n" V 11160 6735 50  0000 L CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 11045 6805 50  0001 C CNN
+F 3 "~" H 11045 6805 50  0001 C CNN
+	1    11045 6805
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11300 6680 11045 6680
+Wire Wire Line
+	11045 6680 11045 6705
+Wire Wire Line
+	11300 6930 11045 6930
+Wire Wire Line
+	11045 6930 11045 6905
+Connection ~ 11300 6680
+Connection ~ 11300 6930
+Wire Wire Line
+	11045 6680 10790 6680
+Wire Wire Line
+	11045 6930 10790 6930
+Connection ~ 11045 6680
+Connection ~ 11045 6930
+$Comp
+L keyboard_parts:GND #PWR0101
+U 1 1 5F4082B5
+P 10790 6680
+F 0 "#PWR0101" H 10790 6730 20  0001 C CNN
+F 1 "GND" V 10790 6510 30  0000 L CNN
+F 2 "" H 10790 6680 60  0000 C CNN
+F 3 "" H 10790 6680 60  0000 C CNN
+	1    10790 6680
+	0    1    1    0   
+$EndComp
+Text GLabel 10790 6930 0    39   Input ~ 0
+3.3V
+$EndSCHEMATC

@@ -1,0 +1,9 @@
+(fp_lib_table
+  (lib (name Device)(type KiCad)(uri ${KIPRJMOD}/library/Device)(options "")(descr ""))
+  (lib (name Housings_QFP)(type KiCad)(uri ${KIPRJMOD}/library/Housings_QFP.pretty-master)(options "")(descr ""))
+  (lib (name keyboard_parts)(type KiCad)(uri ${KIPRJMOD}/library/keyboard_parts.pretty-master)(options "")(descr ""))
+  (lib (name kicad_lib_tmk-master)(type KiCad)(uri ${KIPRJMOD}/library/kicad_lib_tmk-master)(options "")(descr ""))
+  (lib (name MX_Alps_Hybrid-master)(type KiCad)(uri ${KIPRJMOD}/library/MX_Alps_Hybrid-master)(options "")(descr ""))
+  (lib (name Rotary_Encoder)(type KiCad)(uri ${KIPRJMOD}/library/Rotary_Encoder.pretty)(options "")(descr ""))
+  (lib (name Type-C)(type KiCad)(uri ${KIPRJMOD}/library/Type-C.pretty-master)(options "")(descr ""))
+)

@@ -1,0 +1,2117 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L acheronSymbols:STM32F072-LQFP48 U1
+U 1 1 5F489863
+P 3015 2845
+F 0 "U1" H 2960 3060 79  0000 L CNB
+F 1 "STM32F072-LQFP48" H 2370 2885 79  0000 L CNB
+F 2 "acheron_Components:LQFP-48_7x7mm_P0.5mm" H 3015 2845 50  0001 C CNN
+F 3 "" H 3015 2845 50  0001 C CNN
+	1    3015 2845
+	1    0    0    -1  
+$EndComp
+$Comp
+L acheronSymbols:TYPE-C-31-M12_13 J1
+U 1 1 5F48B5C6
+P 6860 2455
+F 0 "J1" H 6967 3872 50  0000 C CNN
+F 1 "TYPE-C-31-M12_13" H 6967 3781 50  0000 C CNN
+F 2 "Type-C:HRO-TYPE-C-31-M-12" V 6360 2505 50  0001 C CNN
+F 3 "" H 7060 2505 50  0001 C CNN
+	1    6860 2455
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Polyfuse_Small F1
+U 1 1 5F492F0F
+P 9560 1290
+F 0 "F1" V 9355 1290 50  0000 C CNN
+F 1 "Polyfuse_Small" V 9446 1290 50  0000 C CNN
+F 2 "acheron_Components:Fuse_1812_4532" H 9610 1090 50  0001 L CNN
+F 3 "~" H 9560 1290 50  0001 C CNN
+	1    9560 1290
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9460 1290 9310 1290
+Text GLabel 9310 1290 0    50   Input ~ 0
+VBUS
+Wire Wire Line
+	9810 1290 9660 1290
+Wire Wire Line
+	9810 1290 9810 1440
+Wire Wire Line
+	9810 1740 9810 1890
+$Comp
+L power:GND #PWR0101
+U 1 1 5F494ED0
+P 9810 1890
+F 0 "#PWR0101" H 9810 1640 50  0001 C CNN
+F 1 "GND" H 9815 1717 50  0000 C CNN
+F 2 "" H 9810 1890 50  0001 C CNN
+F 3 "" H 9810 1890 50  0001 C CNN
+	1    9810 1890
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9810 1290 9960 1290
+Wire Wire Line
+	9960 1290 9960 1140
+Wire Wire Line
+	10110 1290 9960 1290
+Wire Wire Line
+	7610 2555 7460 2555
+Wire Wire Line
+	7460 2455 7460 2555
+Connection ~ 7460 2555
+Wire Wire Line
+	7610 2855 7460 2855
+Wire Wire Line
+	7460 2755 7460 2855
+Connection ~ 7460 2855
+Text GLabel 7610 2555 2    50   Input ~ 0
+DBus-
+Text GLabel 7610 2855 2    50   Input ~ 0
+DBus+
+Connection ~ 9810 1290
+Connection ~ 9960 1290
+Wire Wire Line
+	7010 3905 6860 3905
+Wire Wire Line
+	6760 3905 6860 3905
+Connection ~ 6860 3905
+$Comp
+L power:GND #PWR0102
+U 1 1 5F4A8FCE
+P 7010 3905
+F 0 "#PWR0102" H 7010 3655 50  0001 C CNN
+F 1 "GND" H 7015 3732 50  0000 C CNN
+F 2 "" H 7010 3905 50  0001 C CNN
+F 3 "" H 7010 3905 50  0001 C CNN
+	1    7010 3905
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6560 3905 6560 4055
+Wire Wire Line
+	6260 4055 6560 4055
+Wire Wire Line
+	6560 4205 6560 4055
+$Comp
+L Device:C CSH1
+U 1 1 5F4A9E48
+P 6560 4355
+F 0 "CSH1" H 6675 4401 50  0000 L CNN
+F 1 "4.7nF" H 6675 4310 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6598 4205 50  0001 C CNN
+F 3 "~" H 6560 4355 50  0001 C CNN
+	1    6560 4355
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6260 4205 6260 4055
+Wire Wire Line
+	6560 4655 6560 4505
+Wire Wire Line
+	6260 4405 6260 4655
+Wire Wire Line
+	6260 4655 6560 4655
+Wire Wire Line
+	6560 4805 6560 4655
+$Comp
+L power:GND #PWR0103
+U 1 1 5F4AC093
+P 6560 4805
+F 0 "#PWR0103" H 6560 4555 50  0001 C CNN
+F 1 "GND" H 6565 4632 50  0000 C CNN
+F 2 "" H 6560 4805 50  0001 C CNN
+F 3 "" H 6560 4805 50  0001 C CNN
+	1    6560 4805
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7460 1305 7460 1405
+Wire Wire Line
+	7610 1405 7460 1405
+Text GLabel 7610 1405 2    50   Input ~ 0
+VBUS
+Connection ~ 6560 4055
+Connection ~ 6560 4655
+Connection ~ 7460 1405
+Wire Wire Line
+	1315 1445 1240 1445
+Text GLabel 1165 1445 0    50   Input ~ 0
+3.3V
+$Comp
+L Device:C_Small CB7
+U 1 1 5F643BDD
+P 1240 1345
+F 0 "CB7" H 975 1425 50  0000 L CNN
+F 1 "100nF" H 935 1345 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1240 1345 50  0001 C CNN
+F 3 "~" H 1240 1345 50  0001 C CNN
+	1    1240 1345
+	1    0    0    -1  
+$EndComp
+Connection ~ 1240 1445
+Wire Wire Line
+	1240 1445 1165 1445
+Wire Wire Line
+	1240 1095 1240 1245
+$Comp
+L power:GND #PWR0104
+U 1 1 5F64B547
+P 1240 1095
+F 0 "#PWR0104" H 1240 845 50  0001 C CNN
+F 1 "GND" H 1245 922 50  0000 C CNN
+F 2 "" H 1240 1095 50  0001 C CNN
+F 3 "" H 1240 1095 50  0001 C CNN
+	1    1240 1095
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1665 945  1665 1095
+Wire Wire Line
+	1915 945  1915 1095
+$Comp
+L Device:C_Small CB8
+U 1 1 5F6553D2
+P 1790 945
+F 0 "CB8" V 1675 945 50  0000 C CNN
+F 1 "100n" V 1910 945 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1790 945 50  0001 C CNN
+F 3 "~" H 1790 945 50  0001 C CNN
+	1    1790 945 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1665 945  1690 945 
+Wire Wire Line
+	1890 945  1915 945 
+Wire Wire Line
+	1665 795  1665 945 
+Wire Wire Line
+	1915 795  1915 945 
+Text GLabel 1665 795  1    50   Input ~ 0
+3.3V
+$Comp
+L power:GND #PWR0105
+U 1 1 5F66ACB7
+P 1915 795
+F 0 "#PWR0105" H 1915 545 50  0001 C CNN
+F 1 "GND" H 1920 622 50  0000 C CNN
+F 2 "" H 1915 795 50  0001 C CNN
+F 3 "" H 1915 795 50  0001 C CNN
+	1    1915 795 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1165 3445 1315 3445
+Wire Wire Line
+	1165 3195 1315 3195
+$Comp
+L Device:C_Small CB2
+U 1 1 5F66BC93
+P 1165 3320
+F 0 "CB2" V 1050 3320 50  0000 C CNN
+F 1 "10n" V 1285 3320 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1165 3320 50  0001 C CNN
+F 3 "~" H 1165 3320 50  0001 C CNN
+	1    1165 3320
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1165 3445 1165 3420
+Wire Wire Line
+	1165 3220 1165 3195
+$Comp
+L Device:C_Small CB1
+U 1 1 5F67272D
+P 865 3320
+F 0 "CB1" V 750 3320 50  0000 C CNN
+F 1 "1uF" V 985 3320 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 865 3320 50  0001 C CNN
+F 3 "~" H 865 3320 50  0001 C CNN
+	1    865  3320
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	865  3445 865  3420
+Wire Wire Line
+	865  3220 865  3195
+Wire Wire Line
+	715  3445 865  3445
+Wire Wire Line
+	715  3195 865  3195
+Wire Wire Line
+	865  3445 1165 3445
+Wire Wire Line
+	865  3195 1165 3195
+Text GLabel 715  3445 0    50   Input ~ 0
+3.3V
+$Comp
+L power:GND #PWR0106
+U 1 1 5F6796ED
+P 715 3195
+F 0 "#PWR0106" H 715 2945 50  0001 C CNN
+F 1 "GND" V 720 3067 50  0000 R CNN
+F 2 "" H 715 3195 50  0001 C CNN
+F 3 "" H 715 3195 50  0001 C CNN
+	1    715  3195
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4415 4695 4415 4545
+Wire Wire Line
+	4165 4695 4165 4545
+$Comp
+L Device:C_Small CB5
+U 1 1 5F67CA08
+P 4290 4695
+F 0 "CB5" V 4175 4695 50  0000 C CNN
+F 1 "100n" V 4410 4695 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4290 4695 50  0001 C CNN
+F 3 "~" H 4290 4695 50  0001 C CNN
+	1    4290 4695
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4415 4695 4390 4695
+Wire Wire Line
+	4190 4695 4165 4695
+$Comp
+L Device:C_Small CB6
+U 1 1 5F67CA10
+P 4290 4995
+F 0 "CB6" V 4175 4995 50  0000 C CNN
+F 1 "4.7uF" V 4410 4995 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4290 4995 50  0001 C CNN
+F 3 "~" H 4290 4995 50  0001 C CNN
+	1    4290 4995
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4415 4995 4390 4995
+Wire Wire Line
+	4190 4995 4165 4995
+Wire Wire Line
+	4415 5145 4415 4995
+Wire Wire Line
+	4165 5145 4165 4995
+Wire Wire Line
+	4415 4995 4415 4695
+Wire Wire Line
+	4165 4995 4165 4695
+Text GLabel 4415 5145 3    50   Input ~ 0
+3.3V
+$Comp
+L power:GND #PWR0107
+U 1 1 5F67CA1D
+P 4165 5145
+F 0 "#PWR0107" H 4165 4895 50  0001 C CNN
+F 1 "GND" V 4170 5017 50  0000 R CNN
+F 2 "" H 4165 5145 50  0001 C CNN
+F 3 "" H 4165 5145 50  0001 C CNN
+	1    4165 5145
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4915 1495 4765 1495
+Wire Wire Line
+	4915 1745 4765 1745
+$Comp
+L Device:C_Small CB3
+U 1 1 5F6853BC
+P 4915 1620
+F 0 "CB3" V 4800 1620 50  0000 C CNN
+F 1 "100n" V 5035 1620 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4915 1620 50  0001 C CNN
+F 3 "~" H 4915 1620 50  0001 C CNN
+	1    4915 1620
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4915 1495 4915 1520
+Wire Wire Line
+	4915 1720 4915 1745
+$Comp
+L Device:C_Small CB4
+U 1 1 5F6853C4
+P 5215 1620
+F 0 "CB4" V 5100 1620 50  0000 C CNN
+F 1 "4.7uF" V 5335 1620 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5215 1620 50  0001 C CNN
+F 3 "~" H 5215 1620 50  0001 C CNN
+	1    5215 1620
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5215 1495 5215 1520
+Wire Wire Line
+	5215 1720 5215 1745
+Wire Wire Line
+	5365 1495 5215 1495
+Wire Wire Line
+	5365 1745 5215 1745
+Wire Wire Line
+	5215 1495 4915 1495
+Wire Wire Line
+	5215 1745 4915 1745
+Text GLabel 5365 1495 2    50   Input ~ 0
+3.3V
+$Comp
+L power:GND #PWR0108
+U 1 1 5F6853D1
+P 5365 1745
+F 0 "#PWR0108" H 5365 1495 50  0001 C CNN
+F 1 "GND" V 5370 1617 50  0000 R CNN
+F 2 "" H 5365 1745 50  0001 C CNN
+F 3 "" H 5365 1745 50  0001 C CNN
+	1    5365 1745
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4915 1995 4765 1995
+Text GLabel 4915 1995 2    50   Input ~ 0
+SWDIO
+Wire Wire Line
+	4915 2245 4765 2245
+Text GLabel 4915 2245 2    50   Input ~ 0
+D+
+Wire Wire Line
+	4915 2495 4765 2495
+Text GLabel 4915 2495 2    50   Input ~ 0
+D-
+Wire Wire Line
+	4415 945  4415 1095
+Text GLabel 4415 945  1    50   Input ~ 0
+SWCLK
+Wire Wire Line
+	7460 1805 7610 1805
+$Comp
+L Device:R_Small RCC1
+U 1 1 5F6B7734
+P 7710 1805
+F 0 "RCC1" V 7514 1805 50  0000 C CNN
+F 1 "5.1k" V 7605 1805 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7710 1805 50  0001 C CNN
+F 3 "~" H 7710 1805 50  0001 C CNN
+	1    7710 1805
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7810 1805 7960 1805
+$Comp
+L power:GND #PWR0109
+U 1 1 5F6C0BF6
+P 7960 1805
+F 0 "#PWR0109" H 7960 1555 50  0001 C CNN
+F 1 "GND" V 7965 1677 50  0000 R CNN
+F 2 "" H 7960 1805 50  0001 C CNN
+F 3 "" H 7960 1805 50  0001 C CNN
+	1    7960 1805
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7460 2005 7610 2005
+$Comp
+L Device:R_Small RCC2
+U 1 1 5F6C9EA0
+P 7710 2005
+F 0 "RCC2" V 7640 2005 50  0000 C CNN
+F 1 "5.1k" V 7780 2005 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 7710 2005 50  0001 C CNN
+F 3 "~" H 7710 2005 50  0001 C CNN
+	1    7710 2005
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7810 2005 7960 2005
+$Comp
+L power:GND #PWR0110
+U 1 1 5F6D3A72
+P 7960 2005
+F 0 "#PWR0110" H 7960 1755 50  0001 C CNN
+F 1 "GND" V 7965 1877 50  0000 R CNN
+F 2 "" H 7960 2005 50  0001 C CNN
+F 3 "" H 7960 2005 50  0001 C CNN
+	1    7960 2005
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 7460 3505
+NoConn ~ 7460 3605
+$Comp
+L Device:R_Small RSH1
+U 1 1 5F4AAAC4
+P 6260 4305
+F 0 "RSH1" H 6015 4335 50  0000 L CNN
+F 1 "1M" H 6105 4265 50  0000 L CNN
+F 2 "acheron_Components:R_SMD_1206" H 6260 4305 50  0001 C CNN
+F 3 "~" H 6260 4305 50  0001 C CNN
+	1    6260 4305
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power_Protection:USBLC6-2SC6 U2
+U 1 1 5F6EE973
+P 12850 1605
+F 0 "U2" H 13115 1255 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 13150 1175 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 12850 1105 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 13050 1955 50  0001 C CNN
+	1    12850 1605
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12300 1505 12450 1505
+Text GLabel 12300 1505 0    50   Input ~ 0
+DBus-
+Wire Wire Line
+	12300 1705 12450 1705
+Text GLabel 12300 1705 0    50   Input ~ 0
+D-
+Wire Wire Line
+	13250 1505 13400 1505
+Text GLabel 13400 1505 2    50   Input ~ 0
+DBus+
+Wire Wire Line
+	13250 1705 13400 1705
+Text GLabel 13400 1705 2    50   Input ~ 0
+D+
+Wire Wire Line
+	12850 2155 12850 2005
+$Comp
+L power:GND #PWR0111
+U 1 1 5F718E33
+P 12850 2155
+F 0 "#PWR0111" H 12850 1905 50  0001 C CNN
+F 1 "GND" H 12855 1982 50  0000 C CNN
+F 2 "" H 12850 2155 50  0001 C CNN
+F 3 "" H 12850 2155 50  0001 C CNN
+	1    12850 2155
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12850 1205 12850 1055
+Wire Wire Line
+	13000 1055 12850 1055
+$Comp
+L Device:C_Small CUSB1
+U 1 1 5F729FE5
+P 13100 1055
+F 0 "CUSB1" V 12985 1055 50  0000 C CNN
+F 1 "100n" V 13200 1055 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 13100 1055 50  0001 C CNN
+F 3 "~" H 13100 1055 50  0001 C CNN
+	1    13100 1055
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13350 1055 13200 1055
+$Comp
+L power:GND #PWR0112
+U 1 1 5F733AC0
+P 13350 1055
+F 0 "#PWR0112" H 13350 805 50  0001 C CNN
+F 1 "GND" V 13355 927 50  0000 R CNN
+F 2 "" H 13350 1055 50  0001 C CNN
+F 3 "" H 13350 1055 50  0001 C CNN
+	1    13350 1055
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12850 905  12850 1055
+Text GLabel 12850 905  1    50   Input ~ 0
+VBUS
+Text GLabel 9960 1140 1    50   Input ~ 0
+5V
+$Comp
+L Regulator_Linear:MCP1700-3302E_SOT23 U3
+U 1 1 5F75041E
+P 10410 1290
+F 0 "U3" H 10410 1532 50  0000 C CNN
+F 1 "MCP1700-3302E_SOT23" H 10410 1441 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10410 1515 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf" H 10410 1290 50  0001 C CNN
+	1    10410 1290
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10710 1290 10860 1290
+Wire Wire Line
+	10110 840  10110 1290
+Wire Wire Line
+	10710 840  10710 1290
+Wire Wire Line
+	10110 1290 10110 1590
+Wire Wire Line
+	10710 1290 10710 1590
+$Comp
+L Device:C_Small CSI1
+U 1 1 5F7AE83E
+P 10110 1690
+F 0 "CSI1" H 10202 1736 50  0000 L CNN
+F 1 "10n" H 10202 1645 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10110 1690 50  0001 C CNN
+F 3 "~" H 10110 1690 50  0001 C CNN
+	1    10110 1690
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small CSO1
+U 1 1 5F7AF563
+P 10710 1690
+F 0 "CSO1" H 10802 1736 50  0000 L CNN
+F 1 "1u" H 10802 1645 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10710 1690 50  0001 C CNN
+F 3 "~" H 10710 1690 50  0001 C CNN
+	1    10710 1690
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10110 1940 10110 1790
+Wire Wire Line
+	10710 1940 10710 1790
+Wire Wire Line
+	10410 1590 10410 1940
+Wire Wire Line
+	10410 1940 10710 1940
+Wire Wire Line
+	10110 1940 10410 1940
+Connection ~ 10410 1940
+Wire Wire Line
+	10410 2090 10410 1940
+$Comp
+L power:GND #PWR0113
+U 1 1 5F7DCF42
+P 10410 2090
+F 0 "#PWR0113" H 10410 1840 50  0001 C CNN
+F 1 "GND" H 10415 1917 50  0000 C CNN
+F 2 "" H 10410 2090 50  0001 C CNN
+F 3 "" H 10410 2090 50  0001 C CNN
+	1    10410 2090
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 DS1
+U 1 1 5F7DDB93
+P 10410 840
+F 0 "DS1" H 10410 1057 50  0000 C CNN
+F 1 "1N4148" H 10410 966 50  0000 C CNN
+F 2 "acheron_Components:D_SOD-123" H 10410 665 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 10410 840 50  0001 C CNN
+	1    10410 840 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10710 840  10560 840 
+Wire Wire Line
+	10260 840  10110 840 
+$Comp
+L Device:D_TVS D47
+U 1 1 5F8063FE
+P 9810 1590
+F 0 "D47" V 9764 1670 50  0000 L CNN
+F 1 "D_TVS" V 9855 1670 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 9810 1590 50  0001 C CNN
+F 3 "~" H 9810 1590 50  0001 C CNN
+	1    9810 1590
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1165 2945 1315 2945
+Text GLabel 1165 2945 0    50   Input ~ 0
+NRST
+Wire Wire Line
+	2665 1095 2665 945 
+Text GLabel 2665 945  1    50   Input ~ 0
+BOOT0
+Text GLabel 9435 2780 0    50   Input ~ 0
+NRST
+Wire Wire Line
+	9435 2780 9735 2780
+$Comp
+L Device:C_Small CRST2
+U 1 1 5F87DF0A
+P 9735 2680
+F 0 "CRST2" H 9827 2726 50  0000 L CNN
+F 1 "4.7nF" H 9827 2635 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9735 2680 50  0001 C CNN
+F 3 "~" H 9735 2680 50  0001 C CNN
+	1    9735 2680
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9735 2580 9735 2430
+Wire Wire Line
+	9735 2430 9585 2430
+Wire Wire Line
+	9585 2430 9585 2580
+$Comp
+L power:GND #PWR0114
+U 1 1 5F885716
+P 9585 2580
+F 0 "#PWR0114" H 9585 2330 50  0001 C CNN
+F 1 "GND" H 9590 2407 50  0000 C CNN
+F 2 "" H 9585 2580 50  0001 C CNN
+F 3 "" H 9585 2580 50  0001 C CNN
+	1    9585 2580
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9735 2780 10185 2780
+$Comp
+L acheronSymbols:DTC123J Q1
+U 1 1 5F88D4D1
+P 10385 2880
+F 0 "Q1" V 10702 2880 50  0000 C CNN
+F 1 "DTC123J" V 10611 2880 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10385 2880 50  0001 L CNN
+F 3 "" H 10385 2880 50  0001 L CNN
+	1    10385 2880
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10585 2780 10885 2780
+$Comp
+L power:GND #PWR0115
+U 1 1 5F89468E
+P 10885 2780
+F 0 "#PWR0115" H 10885 2530 50  0001 C CNN
+F 1 "GND" V 10890 2652 50  0000 R CNN
+F 2 "" H 10885 2780 50  0001 C CNN
+F 3 "" H 10885 2780 50  0001 C CNN
+	1    10885 2780
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10385 3130 10385 3430
+Wire Wire Line
+	9935 3430 10385 3430
+$Comp
+L kbd:SW_PUSH SWRST1
+U 1 1 5F8A1C93
+P 9635 3430
+F 0 "SWRST1" H 9635 3685 50  0000 C CNN
+F 1 "SW_PUSH" H 9635 3594 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 9635 3430 50  0001 C CNN
+F 3 "" H 9635 3430 50  0000 C CNN
+	1    9635 3430
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9185 3430 9335 3430
+$Comp
+L power:+3.3V #PWR0116
+U 1 1 5F8A52B5
+P 9185 3430
+F 0 "#PWR0116" H 9185 3280 50  0001 C CNN
+F 1 "+3.3V" H 9200 3603 50  0000 C CNN
+F 2 "" H 9185 3430 50  0001 C CNN
+F 3 "" H 9185 3430 50  0001 C CNN
+	1    9185 3430
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0117
+U 1 1 5F8A855E
+P 10860 1290
+F 0 "#PWR0117" H 10860 1140 50  0001 C CNN
+F 1 "+3.3V" V 10875 1418 50  0000 L CNN
+F 2 "" H 10860 1290 50  0001 C CNN
+F 3 "" H 10860 1290 50  0001 C CNN
+	1    10860 1290
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10385 3430 10535 3430
+$Comp
+L Diode:1N4148 DRST1
+U 1 1 5F8AB590
+P 10685 3430
+F 0 "DRST1" H 10685 3213 50  0000 C CNN
+F 1 "1N4148" H 10685 3304 50  0000 C CNN
+F 2 "acheron_Components:D_SOD-123" H 10685 3255 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 10685 3430 50  0001 C CNN
+	1    10685 3430
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10835 3430 10985 3430
+$Comp
+L Device:R_Small R5
+U 1 1 5F8B2E41
+P 11085 3430
+F 0 "R5" V 10889 3430 50  0000 C CNN
+F 1 "33kO" V 10980 3430 50  0000 C CNN
+F 2 "acheron_Components:R_SMD_1206" H 11085 3430 50  0001 C CNN
+F 3 "~" H 11085 3430 50  0001 C CNN
+	1    11085 3430
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11185 3430 11335 3430
+Wire Wire Line
+	11335 3580 11335 3430
+$Comp
+L Device:C_Small CRST1
+U 1 1 5F8BBF26
+P 11335 3680
+F 0 "CRST1" H 11050 3740 50  0000 L CNN
+F 1 "100uF" H 11040 3665 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11335 3680 50  0001 C CNN
+F 3 "~" H 11335 3680 50  0001 C CNN
+	1    11335 3680
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11335 3430 11635 3430
+Wire Wire Line
+	11635 3430 11635 3580
+$Comp
+L Device:R_Small RRST1
+U 1 1 5F8C2803
+P 11635 3680
+F 0 "RRST1" H 11694 3726 50  0000 L CNN
+F 1 "100k" H 11694 3635 50  0000 L CNN
+F 2 "acheron_Components:R_SMD_1206" H 11635 3680 50  0001 C CNN
+F 3 "~" H 11635 3680 50  0001 C CNN
+	1    11635 3680
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11335 3780 11335 3930
+Wire Wire Line
+	11335 3930 11635 3930
+Wire Wire Line
+	11635 3930 11635 3780
+$Comp
+L power:GND #PWR0118
+U 1 1 5F8C9557
+P 11335 3930
+F 0 "#PWR0118" H 11335 3680 50  0001 C CNN
+F 1 "GND" H 11340 3757 50  0000 C CNN
+F 2 "" H 11335 3930 50  0001 C CNN
+F 3 "" H 11335 3930 50  0001 C CNN
+	1    11335 3930
+	1    0    0    -1  
+$EndComp
+Connection ~ 11335 3930
+Wire Wire Line
+	11635 3430 11785 3430
+Text GLabel 11785 3430 2    50   Input ~ 0
+BOOT0
+Connection ~ 9735 2780
+Connection ~ 10385 3430
+Connection ~ 11335 3430
+Connection ~ 11635 3430
+Connection ~ 12850 1055
+$Comp
+L acheronSymbols:MXSwitch SW1
+U 1 1 5F8D956D
+P 3025 12080
+F 0 "SW1" H 2950 12135 50  0000 L CNN
+F 1 "SHIFT▲" H 2905 12070 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1.5U-Hotswap" H 3025 12080 50  0001 C CNN
+F 3 "" H 3025 12080 50  0001 C CNN
+	1    3025 12080
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D1
+U 1 1 5F8D9ECE
+P 3025 11580
+F 0 "D1" V 2979 11660 50  0000 L CNN
+F 1 "1N4148" V 3070 11660 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 3025 11405 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3025 11580 50  0001 C CNN
+	1    3025 11580
+	0    1    1    0   
+$EndComp
+$Comp
+L acheronSymbols:MXSwitch SW2
+U 1 1 5F8E08FF
+P 3840 12080
+F 0 "SW2" H 3765 12135 50  0000 L CNN
+F 1 "CHAR" H 3720 12070 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 3840 12080 50  0001 C CNN
+F 3 "" H 3840 12080 50  0001 C CNN
+	1    3840 12080
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D2
+U 1 1 5F8E0905
+P 3840 11580
+F 0 "D2" V 3794 11660 50  0000 L CNN
+F 1 "1N4148" V 3885 11660 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 3840 11405 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3840 11580 50  0001 C CNN
+	1    3840 11580
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3025 11430 3840 11430
+$Comp
+L acheronSymbols:MXSwitch SW3
+U 1 1 5F8F99FA
+P 7100 12080
+F 0 "SW3" H 7025 12135 50  0000 L CNN
+F 1 "ENTER" H 6980 12070 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 7100 12080 50  0001 C CNN
+F 3 "" H 7100 12080 50  0001 C CNN
+	1    7100 12080
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D3
+U 1 1 5F8F9A00
+P 7100 11580
+F 0 "D3" V 7054 11660 50  0000 L CNN
+F 1 "1N4148" V 7145 11660 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 7100 11405 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7100 11580 50  0001 C CNN
+	1    7100 11580
+	0    1    1    0   
+$EndComp
+$Comp
+L acheronSymbols:MXSwitch SW4
+U 1 1 5F900C97
+P 8730 12080
+F 0 "SW4" H 8655 12135 50  0000 L CNN
+F 1 "JOB COMMAND" H 8520 12075 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1.5U-Hotswap" H 8730 12080 50  0001 C CNN
+F 3 "" H 8730 12080 50  0001 C CNN
+	1    8730 12080
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D4
+U 1 1 5F900C9D
+P 8730 11580
+F 0 "D4" V 8684 11660 50  0000 L CNN
+F 1 "1N4148" V 8775 11660 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 8730 11405 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 8730 11580 50  0001 C CNN
+	1    8730 11580
+	0    1    1    0   
+$EndComp
+$Comp
+L acheronSymbols:MXSwitch SW5
+U 1 1 5F900CA4
+P 9545 12080
+F 0 "SW5" H 9470 12135 50  0000 L CNN
+F 1 "◀" H 9515 12075 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 9545 12080 50  0001 C CNN
+F 3 "" H 9545 12080 50  0001 C CNN
+	1    9545 12080
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D5
+U 1 1 5F900CAA
+P 9545 11580
+F 0 "D5" V 9499 11660 50  0000 L CNN
+F 1 "1N4148" V 9590 11660 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 9545 11405 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 9545 11580 50  0001 C CNN
+	1    9545 11580
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8730 11430 9545 11430
+$Comp
+L acheronSymbols:MXSwitch SW6
+U 1 1 5F9064AD
+P 10360 12080
+F 0 "SW6" H 10285 12135 50  0000 L CNN
+F 1 "▶" H 10335 12070 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 10360 12080 50  0001 C CNN
+F 3 "" H 10360 12080 50  0001 C CNN
+	1    10360 12080
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D6
+U 1 1 5F9064B3
+P 10360 11580
+F 0 "D6" V 10314 11660 50  0000 L CNN
+F 1 "1N4148" V 10405 11660 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 10360 11405 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 10360 11580 50  0001 C CNN
+	1    10360 11580
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9545 11430 10360 11430
+$Comp
+L acheronSymbols:MXSwitch SW7
+U 1 1 5F95CA59
+P 3025 11005
+F 0 "SW7" H 2950 11060 50  0000 L CNN
+F 1 "INS" H 2905 10995 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 3025 11005 50  0001 C CNN
+F 3 "" H 3025 11005 50  0001 C CNN
+	1    3025 11005
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D7
+U 1 1 5F95CA5F
+P 3025 10505
+F 0 "D7" V 2979 10585 50  0000 L CNN
+F 1 "1N4148" V 3070 10585 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 3025 10330 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3025 10505 50  0001 C CNN
+	1    3025 10505
+	0    1    1    0   
+$EndComp
+$Comp
+L acheronSymbols:MXSwitch SW8
+U 1 1 5F95CA65
+P 3840 11005
+F 0 "SW8" H 3765 11060 50  0000 L CNN
+F 1 "(" H 3720 10995 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 3840 11005 50  0001 C CNN
+F 3 "" H 3840 11005 50  0001 C CNN
+	1    3840 11005
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D8
+U 1 1 5F95CA6B
+P 3840 10505
+F 0 "D8" V 3794 10585 50  0000 L CNN
+F 1 "1N4148" V 3885 10585 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 3840 10330 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3840 10505 50  0001 C CNN
+	1    3840 10505
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3025 10355 3840 10355
+$Comp
+L acheronSymbols:MXSwitch SW9
+U 1 1 5F95CA72
+P 4655 11005
+F 0 "SW9" H 4580 11060 50  0000 L CNN
+F 1 ")" H 4535 10995 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 4655 11005 50  0001 C CNN
+F 3 "" H 4655 11005 50  0001 C CNN
+	1    4655 11005
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D9
+U 1 1 5F95CA78
+P 4655 10505
+F 0 "D9" V 4609 10585 50  0000 L CNN
+F 1 "1N4148" V 4700 10585 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 4655 10330 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4655 10505 50  0001 C CNN
+	1    4655 10505
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3840 10355 4655 10355
+$Comp
+L acheronSymbols:MXSwitch SW10
+U 1 1 5F95CA7F
+P 5470 11005
+F 0 "SW10" H 5395 11060 50  0000 L CNN
+F 1 "." H 5350 10995 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 5470 11005 50  0001 C CNN
+F 3 "" H 5470 11005 50  0001 C CNN
+	1    5470 11005
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D10
+U 1 1 5F95CA85
+P 5470 10505
+F 0 "D10" V 5424 10585 50  0000 L CNN
+F 1 "1N4148" V 5515 10585 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 5470 10330 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5470 10505 50  0001 C CNN
+	1    5470 10505
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4655 10355 5470 10355
+$Comp
+L acheronSymbols:MXSwitch SW11
+U 1 1 5F95CA8C
+P 6285 11005
+F 0 "SW11" H 6210 11060 50  0000 L CNN
+F 1 "_" H 6165 10995 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 6285 11005 50  0001 C CNN
+F 3 "" H 6285 11005 50  0001 C CNN
+	1    6285 11005
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D11
+U 1 1 5F95CA92
+P 6285 10505
+F 0 "D11" V 6239 10585 50  0000 L CNN
+F 1 "1N4148" V 6330 10585 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 6285 10330 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 6285 10505 50  0001 C CNN
+	1    6285 10505
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5470 10355 6285 10355
+$Comp
+L acheronSymbols:MXSwitch SW12
+U 1 1 5F95CA99
+P 7100 11005
+F 0 "SW12" H 7025 11060 50  0000 L CNN
+F 1 "!" H 6980 10995 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 7100 11005 50  0001 C CNN
+F 3 "" H 7100 11005 50  0001 C CNN
+	1    7100 11005
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D12
+U 1 1 5F95CA9F
+P 7100 10505
+F 0 "D12" V 7054 10585 50  0000 L CNN
+F 1 "1N4148" V 7145 10585 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 7100 10330 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7100 10505 50  0001 C CNN
+	1    7100 10505
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6285 10355 7100 10355
+$Comp
+L acheronSymbols:MXSwitch SW13
+U 1 1 5F95CAA6
+P 7915 11005
+F 0 "SW13" H 7840 11060 50  0000 L CNN
+F 1 "?" H 7795 10995 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 7915 11005 50  0001 C CNN
+F 3 "" H 7915 11005 50  0001 C CNN
+	1    7915 11005
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D13
+U 1 1 5F95CAAC
+P 7915 10505
+F 0 "D13" V 7869 10585 50  0000 L CNN
+F 1 "1N4148" V 7960 10585 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 7915 10330 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7915 10505 50  0001 C CNN
+	1    7915 10505
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 10355 7915 10355
+$Comp
+L Diode:1N4148 D14
+U 1 1 5F95CAB9
+P 8730 10505
+F 0 "D14" V 8684 10585 50  0000 L CNN
+F 1 "1N4148" V 8775 10585 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 8730 10330 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 8730 10505 50  0001 C CNN
+	1    8730 10505
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2675 12080 2675 11005
+Connection ~ 3840 10355
+Connection ~ 4655 10355
+Connection ~ 6285 10355
+Connection ~ 7100 10355
+Connection ~ 7915 10355
+Connection ~ 5470 10355
+Wire Wire Line
+	7915 10355 8730 10355
+Connection ~ 9545 10355
+Wire Wire Line
+	9545 10355 10360 10355
+$Comp
+L Diode:1N4148 D16
+U 1 1 5F95CAD3
+P 10360 10505
+F 0 "D16" V 10314 10585 50  0000 L CNN
+F 1 "1N4148" V 10405 10585 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 10360 10330 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 10360 10505 50  0001 C CNN
+	1    10360 10505
+	0    1    1    0   
+$EndComp
+$Comp
+L acheronSymbols:MXSwitch SW16
+U 1 1 5F95CACD
+P 10360 11005
+F 0 "SW16" H 10285 11060 50  0000 L CNN
+F 1 "F2" H 10240 10995 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 10360 11005 50  0001 C CNN
+F 3 "" H 10360 11005 50  0001 C CNN
+	1    10360 11005
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8730 10355 9545 10355
+$Comp
+L Diode:1N4148 D15
+U 1 1 5F95CAC6
+P 9545 10505
+F 0 "D15" V 9499 10585 50  0000 L CNN
+F 1 "1N4148" V 9590 10585 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 9545 10330 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 9545 10505 50  0001 C CNN
+	1    9545 10505
+	0    1    1    0   
+$EndComp
+$Comp
+L acheronSymbols:MXSwitch SW15
+U 1 1 5F95CAC0
+P 9545 11005
+F 0 "SW15" H 9470 11060 50  0000 L CNN
+F 1 "F1" H 9425 10995 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 9545 11005 50  0001 C CNN
+F 3 "" H 9545 11005 50  0001 C CNN
+	1    9545 11005
+	1    0    0    -1  
+$EndComp
+$Comp
+L acheronSymbols:MXSwitch SW14
+U 1 1 5F95CAB3
+P 8730 11005
+F 0 "SW14" H 8655 11060 50  0000 L CNN
+F 1 "&" H 8610 10995 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 8730 11005 50  0001 C CNN
+F 3 "" H 8730 11005 50  0001 C CNN
+	1    8730 11005
+	1    0    0    -1  
+$EndComp
+Connection ~ 8730 10355
+$Comp
+L acheronSymbols:MXSwitch SW17
+U 1 1 5F9AD824
+P 3025 9930
+F 0 "SW17" H 2950 9985 50  0000 L CNN
+F 1 "U" H 2905 9920 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 3025 9930 50  0001 C CNN
+F 3 "" H 3025 9930 50  0001 C CNN
+	1    3025 9930
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D17
+U 1 1 5F9AD82A
+P 3025 9430
+F 0 "D17" V 2979 9510 50  0000 L CNN
+F 1 "1N4148" V 3070 9510 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 3025 9255 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3025 9430 50  0001 C CNN
+	1    3025 9430
+	0    1    1    0   
+$EndComp
+$Comp
+L acheronSymbols:MXSwitch SW18
+U 1 1 5F9AD830
+P 3840 9930
+F 0 "SW18" H 3765 9985 50  0000 L CNN
+F 1 "V" H 3720 9920 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 3840 9930 50  0001 C CNN
+F 3 "" H 3840 9930 50  0001 C CNN
+	1    3840 9930
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D18
+U 1 1 5F9AD836
+P 3840 9430
+F 0 "D18" V 3794 9510 50  0000 L CNN
+F 1 "1N4148" V 3885 9510 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 3840 9255 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3840 9430 50  0001 C CNN
+	1    3840 9430
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3025 9280 3840 9280
+$Comp
+L acheronSymbols:MXSwitch SW19
+U 1 1 5F9AD83D
+P 4655 9930
+F 0 "SW19" H 4580 9985 50  0000 L CNN
+F 1 "W" H 4535 9920 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 4655 9930 50  0001 C CNN
+F 3 "" H 4655 9930 50  0001 C CNN
+	1    4655 9930
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D19
+U 1 1 5F9AD843
+P 4655 9430
+F 0 "D19" V 4609 9510 50  0000 L CNN
+F 1 "1N4148" V 4700 9510 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 4655 9255 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4655 9430 50  0001 C CNN
+	1    4655 9430
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3840 9280 4655 9280
+$Comp
+L acheronSymbols:MXSwitch SW20
+U 1 1 5F9AD84A
+P 5470 9930
+F 0 "SW20" H 5395 9985 50  0000 L CNN
+F 1 "X" H 5350 9920 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 5470 9930 50  0001 C CNN
+F 3 "" H 5470 9930 50  0001 C CNN
+	1    5470 9930
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D20
+U 1 1 5F9AD850
+P 5470 9430
+F 0 "D20" V 5424 9510 50  0000 L CNN
+F 1 "1N4148" V 5515 9510 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 5470 9255 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5470 9430 50  0001 C CNN
+	1    5470 9430
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4655 9280 5470 9280
+Wire Wire Line
+	5470 9280 6285 9280
+Wire Wire Line
+	2675 11005 2675 9930
+Connection ~ 3840 9280
+Connection ~ 4655 9280
+Connection ~ 5470 9280
+$Comp
+L acheronSymbols:MXSwitch SW21
+U 1 1 5F9D0065
+P 6285 9930
+F 0 "SW21" H 6210 9985 50  0000 L CNN
+F 1 "Y" H 6165 9920 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 6285 9930 50  0001 C CNN
+F 3 "" H 6285 9930 50  0001 C CNN
+	1    6285 9930
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D21
+U 1 1 5F9D006B
+P 6285 9430
+F 0 "D21" V 6239 9510 50  0000 L CNN
+F 1 "1N4148" V 6330 9510 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 6285 9255 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 6285 9430 50  0001 C CNN
+	1    6285 9430
+	0    1    1    0   
+$EndComp
+$Comp
+L acheronSymbols:MXSwitch SW22
+U 1 1 5F9D0071
+P 7100 9930
+F 0 "SW22" H 7025 9985 50  0000 L CNN
+F 1 "Z" H 6980 9920 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 7100 9930 50  0001 C CNN
+F 3 "" H 7100 9930 50  0001 C CNN
+	1    7100 9930
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D22
+U 1 1 5F9D0077
+P 7100 9430
+F 0 "D22" V 7054 9510 50  0000 L CNN
+F 1 "1N4148" V 7145 9510 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 7100 9255 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7100 9430 50  0001 C CNN
+	1    7100 9430
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6285 9280 7100 9280
+$Comp
+L acheronSymbols:MXSwitch SW23
+U 1 1 5F9D007E
+P 7915 9930
+F 0 "SW23" H 7840 9985 50  0000 L CNN
+F 1 "+" H 7795 9920 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 7915 9930 50  0001 C CNN
+F 3 "" H 7915 9930 50  0001 C CNN
+	1    7915 9930
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D23
+U 1 1 5F9D0084
+P 7915 9430
+F 0 "D23" V 7869 9510 50  0000 L CNN
+F 1 "1N4148" V 7960 9510 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 7915 9255 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7915 9430 50  0001 C CNN
+	1    7915 9430
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 9280 7915 9280
+$Comp
+L acheronSymbols:MXSwitch SW24
+U 1 1 5F9D008B
+P 8730 9930
+F 0 "SW24" H 8655 9985 50  0000 L CNN
+F 1 "-" H 8610 9920 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 8730 9930 50  0001 C CNN
+F 3 "" H 8730 9930 50  0001 C CNN
+	1    8730 9930
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D24
+U 1 1 5F9D0091
+P 8730 9430
+F 0 "D24" V 8684 9510 50  0000 L CNN
+F 1 "1N4148" V 8775 9510 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 8730 9255 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 8730 9430 50  0001 C CNN
+	1    8730 9430
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7915 9280 8730 9280
+$Comp
+L acheronSymbols:MXSwitch SW25
+U 1 1 5F9D0098
+P 9545 9930
+F 0 "SW25" H 9470 9985 50  0000 L CNN
+F 1 "*" H 9425 9920 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 9545 9930 50  0001 C CNN
+F 3 "" H 9545 9930 50  0001 C CNN
+	1    9545 9930
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D25
+U 1 1 5F9D009E
+P 9545 9430
+F 0 "D25" V 9499 9510 50  0000 L CNN
+F 1 "1N4148" V 9590 9510 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 9545 9255 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 9545 9430 50  0001 C CNN
+	1    9545 9430
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8730 9280 9545 9280
+$Comp
+L acheronSymbols:MXSwitch SW26
+U 1 1 5F9D00A5
+P 10360 9930
+F 0 "SW26" H 10285 9985 50  0000 L CNN
+F 1 "/" H 10240 9920 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 10360 9930 50  0001 C CNN
+F 3 "" H 10360 9930 50  0001 C CNN
+	1    10360 9930
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D26
+U 1 1 5F9D00AB
+P 10360 9430
+F 0 "D26" V 10314 9510 50  0000 L CNN
+F 1 "1N4148" V 10405 9510 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 10360 9255 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 10360 9430 50  0001 C CNN
+	1    10360 9430
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9545 9280 10360 9280
+Connection ~ 7100 9280
+Connection ~ 7915 9280
+Connection ~ 9545 9280
+Connection ~ 8730 9280
+$Comp
+L acheronSymbols:MXSwitch SW27
+U 1 1 5F9E6B7B
+P 3025 8855
+F 0 "SW27" H 2950 8910 50  0000 L CNN
+F 1 "K" H 2905 8845 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 3025 8855 50  0001 C CNN
+F 3 "" H 3025 8855 50  0001 C CNN
+	1    3025 8855
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D27
+U 1 1 5F9E6B81
+P 3025 8355
+F 0 "D27" V 2979 8435 50  0000 L CNN
+F 1 "1N4148" V 3070 8435 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 3025 8180 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3025 8355 50  0001 C CNN
+	1    3025 8355
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3025 8205 3840 8205
+Wire Wire Line
+	2675 9930 2675 8855
+$Comp
+L acheronSymbols:MXSwitch SW28
+U 1 1 5F9EE3B0
+P 3840 8855
+F 0 "SW28" H 3765 8910 50  0000 L CNN
+F 1 "L" H 3720 8845 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 3840 8855 50  0001 C CNN
+F 3 "" H 3840 8855 50  0001 C CNN
+	1    3840 8855
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D28
+U 1 1 5F9EE3B6
+P 3840 8355
+F 0 "D28" V 3794 8435 50  0000 L CNN
+F 1 "1N4148" V 3885 8435 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 3840 8180 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3840 8355 50  0001 C CNN
+	1    3840 8355
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3840 8205 4655 8205
+$Comp
+L acheronSymbols:MXSwitch SW29
+U 1 1 5F9F57E1
+P 4655 8855
+F 0 "SW29" H 4580 8910 50  0000 L CNN
+F 1 "M" H 4535 8845 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 4655 8855 50  0001 C CNN
+F 3 "" H 4655 8855 50  0001 C CNN
+	1    4655 8855
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D29
+U 1 1 5F9F57E7
+P 4655 8355
+F 0 "D29" V 4609 8435 50  0000 L CNN
+F 1 "1N4148" V 4700 8435 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 4655 8180 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4655 8355 50  0001 C CNN
+	1    4655 8355
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4655 8205 5470 8205
+$Comp
+L acheronSymbols:MXSwitch SW30
+U 1 1 5F9FCF8A
+P 5470 8855
+F 0 "SW30" H 5395 8910 50  0000 L CNN
+F 1 "N" H 5350 8845 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 5470 8855 50  0001 C CNN
+F 3 "" H 5470 8855 50  0001 C CNN
+	1    5470 8855
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D30
+U 1 1 5F9FCF90
+P 5470 8355
+F 0 "D30" V 5424 8435 50  0000 L CNN
+F 1 "1N4148" V 5515 8435 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 5470 8180 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5470 8355 50  0001 C CNN
+	1    5470 8355
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5470 8205 6285 8205
+$Comp
+L acheronSymbols:MXSwitch SW31
+U 1 1 5FA046B5
+P 6285 8855
+F 0 "SW31" H 6210 8910 50  0000 L CNN
+F 1 "O" H 6165 8845 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 6285 8855 50  0001 C CNN
+F 3 "" H 6285 8855 50  0001 C CNN
+	1    6285 8855
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D31
+U 1 1 5FA046BB
+P 6285 8355
+F 0 "D31" V 6239 8435 50  0000 L CNN
+F 1 "1N4148" V 6330 8435 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 6285 8180 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 6285 8355 50  0001 C CNN
+	1    6285 8355
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6285 8205 7100 8205
+$Comp
+L acheronSymbols:MXSwitch SW32
+U 1 1 5FA0BEED
+P 7100 8855
+F 0 "SW32" H 7025 8910 50  0000 L CNN
+F 1 "P" H 6980 8845 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 7100 8855 50  0001 C CNN
+F 3 "" H 7100 8855 50  0001 C CNN
+	1    7100 8855
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D32
+U 1 1 5FA0BEF3
+P 7100 8355
+F 0 "D32" V 7054 8435 50  0000 L CNN
+F 1 "1N4148" V 7145 8435 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 7100 8180 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7100 8355 50  0001 C CNN
+	1    7100 8355
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 8205 7915 8205
+$Comp
+L acheronSymbols:MXSwitch SW33
+U 1 1 5FA13B53
+P 7915 8855
+F 0 "SW33" H 7840 8910 50  0000 L CNN
+F 1 "Q" H 7795 8845 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 7915 8855 50  0001 C CNN
+F 3 "" H 7915 8855 50  0001 C CNN
+	1    7915 8855
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D33
+U 1 1 5FA13B59
+P 7915 8355
+F 0 "D33" V 7869 8435 50  0000 L CNN
+F 1 "1N4148" V 7960 8435 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 7915 8180 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7915 8355 50  0001 C CNN
+	1    7915 8355
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7915 8205 8730 8205
+$Comp
+L acheronSymbols:MXSwitch SW34
+U 1 1 5FA1B759
+P 8730 8855
+F 0 "SW34" H 8655 8910 50  0000 L CNN
+F 1 "R" H 8610 8845 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 8730 8855 50  0001 C CNN
+F 3 "" H 8730 8855 50  0001 C CNN
+	1    8730 8855
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D34
+U 1 1 5FA1B75F
+P 8730 8355
+F 0 "D34" V 8684 8435 50  0000 L CNN
+F 1 "1N4148" V 8775 8435 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 8730 8180 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 8730 8355 50  0001 C CNN
+	1    8730 8355
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8730 8205 9545 8205
+$Comp
+L acheronSymbols:MXSwitch SW35
+U 1 1 5FA23073
+P 9545 8855
+F 0 "SW35" H 9470 8910 50  0000 L CNN
+F 1 "S" H 9425 8845 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 9545 8855 50  0001 C CNN
+F 3 "" H 9545 8855 50  0001 C CNN
+	1    9545 8855
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D35
+U 1 1 5FA23079
+P 9545 8355
+F 0 "D35" V 9499 8435 50  0000 L CNN
+F 1 "1N4148" V 9590 8435 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 9545 8180 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 9545 8355 50  0001 C CNN
+	1    9545 8355
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9545 8205 10360 8205
+$Comp
+L acheronSymbols:MXSwitch SW36
+U 1 1 5FA2B0B6
+P 10360 8855
+F 0 "SW36" H 10285 8910 50  0000 L CNN
+F 1 "T" H 10240 8845 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 10360 8855 50  0001 C CNN
+F 3 "" H 10360 8855 50  0001 C CNN
+	1    10360 8855
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D36
+U 1 1 5FA2B0BC
+P 10360 8355
+F 0 "D36" V 10314 8435 50  0000 L CNN
+F 1 "1N4148" V 10405 8435 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 10360 8180 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 10360 8355 50  0001 C CNN
+	1    10360 8355
+	0    1    1    0   
+$EndComp
+$Comp
+L acheronSymbols:MXSwitch SW37
+U 1 1 5FA3935A
+P 3025 7780
+F 0 "SW37" H 2950 7835 50  0000 L CNN
+F 1 "A" H 2905 7770 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 3025 7780 50  0001 C CNN
+F 3 "" H 3025 7780 50  0001 C CNN
+	1    3025 7780
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D37
+U 1 1 5FA39360
+P 3025 7280
+F 0 "D37" V 2979 7360 50  0000 L CNN
+F 1 "1N4148" V 3070 7360 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 3025 7105 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3025 7280 50  0001 C CNN
+	1    3025 7280
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3025 7130 3840 7130
+Wire Wire Line
+	2675 8855 2675 7780
+$Comp
+L acheronSymbols:MXSwitch SW38
+U 1 1 5FA41350
+P 3840 7780
+F 0 "SW38" H 3765 7835 50  0000 L CNN
+F 1 "B" H 3720 7770 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 3840 7780 50  0001 C CNN
+F 3 "" H 3840 7780 50  0001 C CNN
+	1    3840 7780
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D38
+U 1 1 5FA41356
+P 3840 7280
+F 0 "D38" V 3794 7360 50  0000 L CNN
+F 1 "1N4148" V 3885 7360 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 3840 7105 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3840 7280 50  0001 C CNN
+	1    3840 7280
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3840 7130 4655 7130
+$Comp
+L acheronSymbols:MXSwitch SW39
+U 1 1 5FA49ED4
+P 4655 7780
+F 0 "SW39" H 4580 7835 50  0000 L CNN
+F 1 "C" H 4535 7770 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 4655 7780 50  0001 C CNN
+F 3 "" H 4655 7780 50  0001 C CNN
+	1    4655 7780
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D39
+U 1 1 5FA49EDA
+P 4655 7280
+F 0 "D39" V 4609 7360 50  0000 L CNN
+F 1 "1N4148" V 4700 7360 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 4655 7105 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4655 7280 50  0001 C CNN
+	1    4655 7280
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4655 7130 5470 7130
+$Comp
+L acheronSymbols:MXSwitch SW40
+U 1 1 5FA5258C
+P 5470 7780
+F 0 "SW40" H 5395 7835 50  0000 L CNN
+F 1 "D" H 5350 7770 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 5470 7780 50  0001 C CNN
+F 3 "" H 5470 7780 50  0001 C CNN
+	1    5470 7780
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D40
+U 1 1 5FA52592
+P 5470 7280
+F 0 "D40" V 5424 7360 50  0000 L CNN
+F 1 "1N4148" V 5515 7360 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 5470 7105 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5470 7280 50  0001 C CNN
+	1    5470 7280
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5470 7130 6285 7130
+$Comp
+L acheronSymbols:MXSwitch SW41
+U 1 1 5FA5A636
+P 6285 7780
+F 0 "SW41" H 6210 7835 50  0000 L CNN
+F 1 "E" H 6165 7770 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 6285 7780 50  0001 C CNN
+F 3 "" H 6285 7780 50  0001 C CNN
+	1    6285 7780
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D41
+U 1 1 5FA5A63C
+P 6285 7280
+F 0 "D41" V 6239 7360 50  0000 L CNN
+F 1 "1N4148" V 6330 7360 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 6285 7105 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 6285 7280 50  0001 C CNN
+	1    6285 7280
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6285 7130 7100 7130
+$Comp
+L acheronSymbols:MXSwitch SW42
+U 1 1 5FA629B2
+P 7100 7780
+F 0 "SW42" H 7025 7835 50  0000 L CNN
+F 1 "F" H 6980 7770 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 7100 7780 50  0001 C CNN
+F 3 "" H 7100 7780 50  0001 C CNN
+	1    7100 7780
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D42
+U 1 1 5FA629B8
+P 7100 7280
+F 0 "D42" V 7054 7360 50  0000 L CNN
+F 1 "1N4148" V 7145 7360 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 7100 7105 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7100 7280 50  0001 C CNN
+	1    7100 7280
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 7130 7915 7130
+$Comp
+L acheronSymbols:MXSwitch SW43
+U 1 1 5FA6B4B3
+P 7915 7780
+F 0 "SW43" H 7840 7835 50  0000 L CNN
+F 1 "G" H 7795 7770 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 7915 7780 50  0001 C CNN
+F 3 "" H 7915 7780 50  0001 C CNN
+	1    7915 7780
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D43
+U 1 1 5FA6B4B9
+P 7915 7280
+F 0 "D43" V 7869 7360 50  0000 L CNN
+F 1 "1N4148" V 7960 7360 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 7915 7105 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 7915 7280 50  0001 C CNN
+	1    7915 7280
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7915 7130 8730 7130
+$Comp
+L acheronSymbols:MXSwitch SW44
+U 1 1 5FA73B61
+P 8730 7780
+F 0 "SW44" H 8655 7835 50  0000 L CNN
+F 1 "H" H 8610 7770 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 8730 7780 50  0001 C CNN
+F 3 "" H 8730 7780 50  0001 C CNN
+	1    8730 7780
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D44
+U 1 1 5FA73B67
+P 8730 7280
+F 0 "D44" V 8684 7360 50  0000 L CNN
+F 1 "1N4148" V 8775 7360 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 8730 7105 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 8730 7280 50  0001 C CNN
+	1    8730 7280
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8730 7130 9545 7130
+$Comp
+L acheronSymbols:MXSwitch SW45
+U 1 1 5FA7C8C8
+P 9545 7780
+F 0 "SW45" H 9470 7835 50  0000 L CNN
+F 1 "I" H 9425 7770 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 9545 7780 50  0001 C CNN
+F 3 "" H 9545 7780 50  0001 C CNN
+	1    9545 7780
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D45
+U 1 1 5FA7C8CE
+P 9545 7280
+F 0 "D45" V 9499 7360 50  0000 L CNN
+F 1 "1N4148" V 9590 7360 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 9545 7105 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 9545 7280 50  0001 C CNN
+	1    9545 7280
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9545 7130 10360 7130
+$Comp
+L acheronSymbols:MXSwitch SW46
+U 1 1 5FA85FB3
+P 10360 7780
+F 0 "SW46" H 10285 7835 50  0000 L CNN
+F 1 "J" H 10240 7770 39  0000 L CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap" H 10360 7780 50  0001 C CNN
+F 3 "" H 10360 7780 50  0001 C CNN
+	1    10360 7780
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D46
+U 1 1 5FA85FB9
+P 10360 7280
+F 0 "D46" V 10314 7360 50  0000 L CNN
+F 1 "1N4148" V 10405 7360 50  0000 L CNN
+F 2 "acheron_Components:D_SOD-123" H 10360 7105 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 10360 7280 50  0001 C CNN
+	1    10360 7280
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3840 11430 7100 11430
+Wire Wire Line
+	7100 11430 8730 11430
+Wire Wire Line
+	3490 7780 3490 8855
+Connection ~ 3490 8855
+Wire Wire Line
+	3490 8855 3490 9930
+Connection ~ 3490 9930
+Wire Wire Line
+	3490 9930 3490 11005
+Connection ~ 3490 11005
+Wire Wire Line
+	3490 11005 3490 12080
+Wire Wire Line
+	4305 11005 4305 9930
+Connection ~ 4305 8855
+Wire Wire Line
+	4305 8855 4305 7780
+Connection ~ 4305 9930
+Wire Wire Line
+	4305 9930 4305 8855
+Wire Wire Line
+	5120 7780 5120 8855
+Connection ~ 5120 8855
+Wire Wire Line
+	5120 8855 5120 9930
+Connection ~ 5120 9930
+Wire Wire Line
+	5120 9930 5120 11005
+Wire Wire Line
+	5935 11005 5935 9930
+Connection ~ 5935 8855
+Wire Wire Line
+	5935 8855 5935 7780
+Connection ~ 5935 9930
+Wire Wire Line
+	5935 9930 5935 8855
+Wire Wire Line
+	6750 7780 6750 8855
+Connection ~ 6750 8855
+Wire Wire Line
+	6750 8855 6750 9930
+Connection ~ 6750 9930
+Wire Wire Line
+	6750 9930 6750 11005
+Connection ~ 6750 11005
+Wire Wire Line
+	6750 11005 6750 12080
+Wire Wire Line
+	7565 8855 7565 7780
+Wire Wire Line
+	8380 7780 8380 8855
+Connection ~ 8380 8855
+Wire Wire Line
+	8380 8855 8380 9930
+Connection ~ 8380 9930
+Wire Wire Line
+	8380 9930 8380 11005
+Connection ~ 8380 11005
+Wire Wire Line
+	8380 11005 8380 12080
+Wire Wire Line
+	9195 12080 9195 11005
+Connection ~ 9195 8855
+Wire Wire Line
+	9195 8855 9195 7780
+Connection ~ 9195 9930
+Wire Wire Line
+	9195 9930 9195 8855
+Connection ~ 9195 11005
+Wire Wire Line
+	9195 11005 9195 9930
+Wire Wire Line
+	10010 7780 10010 8855
+Connection ~ 10010 8855
+Wire Wire Line
+	10010 8855 10010 9930
+Connection ~ 10010 9930
+Wire Wire Line
+	10010 9930 10010 11005
+Connection ~ 10010 11005
+Wire Wire Line
+	10010 11005 10010 12080
+Wire Wire Line
+	2210 7130 3025 7130
+Wire Wire Line
+	2210 8205 3025 8205
+Wire Wire Line
+	2210 9280 3025 9280
+Wire Wire Line
+	2210 10355 3025 10355
+Wire Wire Line
+	2210 11430 3025 11430
+Wire Wire Line
+	2675 7780 2675 6965
+Wire Wire Line
+	3490 7780 3490 6965
+Wire Wire Line
+	4305 7780 4305 6965
+Wire Wire Line
+	5120 7780 5120 6965
+Wire Wire Line
+	5935 7780 5935 6965
+Wire Wire Line
+	6750 7780 6750 6965
+Wire Wire Line
+	7565 7780 7565 6965
+Wire Wire Line
+	8380 7780 8380 6965
+Wire Wire Line
+	9195 7780 9195 6965
+Wire Wire Line
+	10010 7780 10010 6965
+Text GLabel 2210 11430 0    50   Input ~ 0
+Row1
+Text GLabel 2210 10355 0    50   Input ~ 0
+Row2
+Text GLabel 2210 9280 0    50   Input ~ 0
+Row3
+Text GLabel 2210 8205 0    50   Input ~ 0
+Row4
+Text GLabel 2210 7130 0    50   Input ~ 0
+Row5
+Text GLabel 2675 6965 0    50   Input ~ 0
+Col1
+Text GLabel 3490 6965 0    50   Input ~ 0
+Col2
+Text GLabel 4305 6965 0    50   Input ~ 0
+Col3
+Text GLabel 5120 6965 0    50   Input ~ 0
+Col4
+Text GLabel 5935 6965 0    50   Input ~ 0
+Col5
+Text GLabel 6750 6965 0    50   Input ~ 0
+Col6
+Text GLabel 7565 6965 0    50   Input ~ 0
+Col7
+Text GLabel 8380 6965 0    50   Input ~ 0
+Col8
+Text GLabel 9195 6965 0    50   Input ~ 0
+Col9
+Text GLabel 10010 6965 0    50   Input ~ 0
+Col10
+Text GLabel 1665 4545 3    50   Input ~ 0
+Col1
+Text GLabel 1915 4545 3    50   Input ~ 0
+Col2
+Text GLabel 2165 4545 3    50   Input ~ 0
+Col3
+Text GLabel 2415 4545 3    50   Input ~ 0
+Col4
+Text GLabel 2665 4545 3    50   Input ~ 0
+Col5
+Text GLabel 2915 4545 3    50   Input ~ 0
+Col6
+Text GLabel 3165 4545 3    50   Input ~ 0
+Col7
+Text GLabel 3415 4545 3    50   Input ~ 0
+Col8
+Text GLabel 3665 4545 3    50   Input ~ 0
+Col9
+Text GLabel 3915 4545 3    50   Input ~ 0
+Col10
+Text GLabel 1315 1695 0    50   Input ~ 0
+Row1
+Text GLabel 1315 1945 0    50   Input ~ 0
+Row2
+Text GLabel 1315 2195 0    50   Input ~ 0
+Row3
+Text GLabel 1315 2445 0    50   Input ~ 0
+Row4
+Text GLabel 1315 2695 0    50   Input ~ 0
+Row5
+Wire Wire Line
+	7565 11005 7565 9930
+Wire Wire Line
+	7565 9930 7565 8855
+Connection ~ 7565 9930
+Connection ~ 7565 8855
+$EndSCHEMATC
